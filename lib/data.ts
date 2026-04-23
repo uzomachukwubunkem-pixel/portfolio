@@ -38,6 +38,7 @@ export const skills = {
     'Express',
     'Next.js',
     'HTML/CSS',
+    'MongoDB',
     'Git/GitHub',
   ],
   engineering: ['AutoCAD', 'SolidWorks', 'Microsoft Office Suite'],
@@ -45,14 +46,7 @@ export const skills = {
 }
 
 export const experiences: ExperienceItem[] = [
-     {
-    title: 'B.Eng in Mechanical Engineering',
-    organization: 'Federal University of Technology, Owerri',
-    date: 'Graduated',
-    details: [
-      'Comprehensive engineering education with focus on design, thermodynamics, and mechanical systems.',
-    ],
-  },
+    
  
   {
     title: 'Engineering Intern',
@@ -71,7 +65,7 @@ export const experiences: ExperienceItem[] = [
     date: '2025-2026',
     details: [
       'Front‑end Development (HTML, CSS, JavaScript, React)',
-      'Back‑end Development (Node.js, Express, Databases)',
+      'Back‑end Development (Node.js, Express, MongoDB)',
       'Version Control (Git, GitHub)',
       'Responsive Web Design & Deployment',
     ],
@@ -79,6 +73,13 @@ export const experiences: ExperienceItem[] = [
 ]
 
 export const featuredProjects: Project[] = [
+{
+    title: 'Expense Tracker',
+    description:
+      'A web app that helps small businesses record, manage, and analyse every expense. It automatically applies Nigerian tax rules (VAT, CIT exemption thresholds, withholding tax) and monitors annual turnover to alert you before you hit key limits. The app generates tax‑ready reports, maintains an audit trail, and ensures you never miss filing obligations – turning expense tracking into effortless tax compliance.',
+    tech: ['Typescript', 'MongoDb', 'Express.js', 'React.js', 'Node.js', 'Azure Container App'],
+  },
+
   {
     title: 'TaskFlow – Task Management App',
     description: 'A React and Node.js application for managing tasks with features like user authentication, real-time updates, and a sleek UI, Built responsive web apps using React and Node.js. ',
@@ -90,12 +91,8 @@ export const featuredProjects: Project[] = [
       'Engineered a solar‑powered pumping system with 45% efficiency improvement. Programmed monitoring logic and data tracking.',
     tech: ['Mechanical Design', 'Solar Power', 'System Integration'],
   },
-  {
-    title: 'Post‑Harvest Engineering Solutions',
-    description:
-      'Designed machine components using AutoCAD and SolidWorks, reducing prototype development time by 25%. Applied thermodynamics principles.',
-    tech: ['AutoCAD', 'SolidWorks', 'Thermodynamics'],
-  },
+  
+
 ]
 
 // 👇 GitHub repositories to show – edit this list
