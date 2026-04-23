@@ -42,7 +42,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-accent text-2xl"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           <i className={`fas ${isOpen ? "fa-times" : "fa-bars"}`}></i>
         </button>
@@ -53,7 +53,18 @@ export default function Navbar() {
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        <div className="pt-20 px-6">
+        <div className="flex items-center justify-between px-6 pt-6">
+          <span className="font-mono text-sm text-textMuted">Menu</span>
+          <button
+            className="text-accent text-2xl"
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+          >
+            <i className="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div className="pt-10 px-6">
           <ul className="space-y-6">
             {navItems.map((item) => (
               <li key={item}>
