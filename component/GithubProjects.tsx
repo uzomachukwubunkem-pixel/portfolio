@@ -72,9 +72,7 @@ export default function GitHubProjects() {
                   {repo.stargazers_count} ⭐
                 </span>
               </div>
-              <p className="text-textMuted mt-2 mb-4">
-                {repo.description || 'No description'}
-              </p>
+             
               <div className="flex justify-between items-center text-sm text-textMuted">
                 <span className="flex items-center gap-1">
                   <span className="w-3 h-3 rounded-full bg-accent"></span>

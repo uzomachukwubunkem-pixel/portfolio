@@ -100,7 +100,8 @@ export const featuredProjects: Project[] = [
 
 // 👇 GitHub repositories to show – edit this list
 export const selectedGitHubRepos = [
-   'taskFlow',
+  'expenseTracker',
+  'taskFlow',
   'cine-verse',
   'todoApp',
   'movieRecommendation',
